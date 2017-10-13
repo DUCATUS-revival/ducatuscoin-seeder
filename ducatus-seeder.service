@@ -1,0 +1,12 @@
+[Unit]
+Description=Ducatus DNS SEEDER
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/ducatus/ducatuscoin-seeder/
+ExecStart=/root/ducatus/ducatuscoin-seeder/dnsseed -h dnsseed.ducatus.io -n seeder0.ducatus.io -m tech.ducatusx.com
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
