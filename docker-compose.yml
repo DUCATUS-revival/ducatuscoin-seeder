@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+        dnsseed:
+                image: ducatus-dns-seeder
+                ports:
+                        - 53:53
+                command: /root/ducatus-seeder/dnsseed
