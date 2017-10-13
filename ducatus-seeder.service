@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/root/ducatus/ducatuscoin-seeder/
-ExecStart=/root/ducatus/ducatuscoin-seeder/dnsseed -h dnsseed.ducatus.io -n seeder0.ducatus.io -m tech.ducatusx.com
+ExecStart=/root/ducatus/ducatuscoin-seeder/dnsseed -h dnsseed.ducatus.io -n seed-sg.ducatus.io -m tech.ducatusx.com
 Restart=always
 
 [Install]
